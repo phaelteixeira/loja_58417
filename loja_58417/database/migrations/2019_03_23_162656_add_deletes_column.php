@@ -14,8 +14,8 @@ class AddDeletesColumn extends Migration
     public function up()
     {
         //
-        Schema::tables('categorias',function(Blueprint $table){
-            $table -> softDeletes();
+        Schema::table('categorias',function(Blueprint $table){
+            $table->softDeletes();
         });
     }
 
